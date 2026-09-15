@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人电子名片</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            width: 100%;
+            max-width: 380px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .card-header {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            height: 100px;
+        }
+        .avatar-box {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            background: #dbeafe;
+            margin: -60px auto 16px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:42px;
+            color:#2563eb;
+        }
+        .card-body {
+            padding: 0 24px 28px;
+            text-align: center;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 6px;
+        }
+        .title {
+            color: #64748b;
+            font-size:16px;
+            margin-bottom:20px;
+        }
+        .info-item {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:10px;
+            color:#475569;
+            margin:12px 0;
+            font-size:15px;
+        }
+        .info-item a {
+            color:#2563eb;
+            text-decoration:none;
+        }
+        .divider {
+            height:1px;
+            background:#e2e8f0;
+            margin:24px 0;
+        }
+        .desc {
+            color:#64748b;
+            line-height:1.6;
+            font-size:14px;
+        }
+        .social-group {
+            margin-top:24px;
+            display:flex;
+            gap:16px;
+            justify-content:center;
+        }
+        .social-link {
+            width:44px;
+            height:44px;
+            border-radius:50%;
+            background:#eff6ff;
+            color:#2563eb;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-decoration:none;
+            transition:0.2s;
+        }
+        .social-link:hover {
+            background:#2563eb;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header"></div>
+        <div class="avatar-box"><img src="avatar.jpg" style="width:100%;height:100%;border-radius:50%;object-fit:cover"></div>
+        <div class="card-body">
+            <h2 class="name">毛湘钧</h2>
+            <div class="title">嵌入式开发工程师</div>
+
+            <div class="info-item">📱 电话：<a href="tel:188****1917">188****1917</a></div>
+            <div class="info-item">📧 邮箱：<a href="mailto:maoxiangjun@163.com">maoxiangjun@163.com</a></div>
+            <div class="info-item">🌐 个人网站：<a href="https://junwin.xyz" target="_blank">junwin.xyz</a></div>
+
+            <div class="divider"></div>
+
+            <p class="desc">
+                专注嵌入式软硬件开发，熟悉单片机、Linux驱动与电路设计，热爱技术与开源项目。
+            </p>
+
+            <div class="social-group">
+                <a class="social-link" href="#" target="_blank">G</a>
+                <a class="social-link" href="#" target="_blank">L</a>
+                <a class="social-link" href="#" target="_blank">W</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
